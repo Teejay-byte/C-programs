@@ -15,9 +15,10 @@ int main() {
     printf("Enter time period (in years): ");
     scanf("%f", &time);
 
-    // calculate the compound interest (i think this is right?)
+    // calculate the compound interest
     float x = 1 + (rate / 100);
-    for (int i = 0; i < time; i++) {
+    for (int i = 0; i < time; i++)
+    {
         principal = principal * x;
     }
     compound_interest = principal - (principal / x);
